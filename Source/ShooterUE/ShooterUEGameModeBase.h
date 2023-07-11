@@ -13,5 +13,10 @@ UCLASS()
 class SHOOTERUE_API AShooterUEGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
+
+
+public:
+	AShooterUEGameModeBase();	//create constructor to add the player
+
 	
 };

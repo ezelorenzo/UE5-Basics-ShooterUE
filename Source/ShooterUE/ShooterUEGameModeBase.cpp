@@ -2,4 +2,9 @@
 
 
 #include "ShooterUEGameModeBase.h"
+#include "PlayerCharacter.h"
 
+AShooterUEGameModeBase::AShooterUEGameModeBase()
+{
+	DefaultPawnClass = APlayerCharacter::StaticClass();
+}
