@@ -16,6 +16,8 @@ void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	UE_LOG(LogTemp, Warning, TEXT("Begin Play Message"));
+
 }
 
 // Called every frame
@@ -23,6 +25,7 @@ void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	UE_LOG(LogTemp, Warning, TEXT("Tick Message"));
 }
 
 // Called to bind functionality to input
