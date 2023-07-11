@@ -15,8 +15,8 @@ APlayerCharacter::APlayerCharacter()
 void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	UE_LOG(LogTemp, Warning, TEXT("Begin Play Message"));
+	int number = 3;
+	UE_LOG(LogTemp, Warning, TEXT("Begin Play Message %d"), number);
 
 }
 
@@ -25,7 +25,7 @@ void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	UE_LOG(LogTemp, Warning, TEXT("Tick Message"));
+	//UE_LOG(LogTemp, Warning, TEXT("Tick Message"));
 }
 
 // Called to bind functionality to input
