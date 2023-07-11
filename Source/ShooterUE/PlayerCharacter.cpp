@@ -19,6 +19,8 @@ void APlayerCharacter::BeginPlay()
 	FString chain = "Good Bye";
 	UE_LOG(LogTemp, Warning, TEXT("Begin Play Message %s"), *chain);
 
+	GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Yellow, TEXT("this is a test message"));
+
 }
 
 // Called every frame
