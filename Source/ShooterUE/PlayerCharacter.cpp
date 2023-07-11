@@ -16,7 +16,8 @@ void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	int number = 3;
-	UE_LOG(LogTemp, Warning, TEXT("Begin Play Message %d"), number);
+	FString chain = "Good Bye";
+	UE_LOG(LogTemp, Warning, TEXT("Begin Play Message %s"), *chain);
 
 }
 
